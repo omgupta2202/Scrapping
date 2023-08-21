@@ -8,7 +8,7 @@ csv_writer = csv.writer(csv_file)
 csv_writer.writerow(['Product URL', 'Product Name', 'Product Price', 'Rating', 'Number of Reviews',
                      'Description', 'ASIN', 'Product Description', 'Manufacturer'])
 
-#Scraping Product Listings
+# Part1: Scraping Product Listings
 for page_number in range(1, 21):
     url = f'https://www.amazon.in/s?k=bags&crid=2M096C61O4MLT&qid=1653308124&sprefix=ba%2Caps%2C283&ref=sr_pg_{page_number}'
 
